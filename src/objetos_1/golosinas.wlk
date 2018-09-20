@@ -166,30 +166,27 @@ object tuttifrutti {
 	var property libreGluten
 	var contadorMordiscos =0
 	var precio = 10
-	
-	method setPrecio(){
+	var gustosPosibles= ["frutilla", "chocolate", "naranja"]
+	const property peso =5	
+	method precio(){
 		if(libreGluten){
 			precio=7	
 		}
+		return precio
 	}
-	
+	/*mordisco hace un contador de cantidad de mordidas y gusto
+	accede a al gusto con el contador como indice. Sin morderlo el sabor es frutilla.*/
 	method gusto(){
-		if(contadorMordiscos==0){ 
-			return "frutilla"
-		}
-		else if(contadorMordiscos==1){
-			 return "chocolate"
-		}
-		    else{
-			 return "naranja"
-		}
-		
-			
+		return gustosPosibles.get(contadorMordiscos)
 	}
+
 	
 	method mordisco(){
-		contadorMordiscos+=1
-	
-	}
+		if(contadorMordiscos<2){
+		 contadorMordiscos+=1
+	    }else{
+	    	contadorMordiscos=0
+	    }
+	  }
 }
 
