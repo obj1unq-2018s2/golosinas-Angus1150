@@ -23,6 +23,5 @@ describe "test de bombon" {
 	
 	test "libre de gluten" {
 		assert.that(bombon.libreGluten())	
-	}
-	
+	}	
 }
