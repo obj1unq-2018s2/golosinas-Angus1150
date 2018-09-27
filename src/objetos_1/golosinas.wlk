@@ -162,6 +162,11 @@ object golosinaBaniada {
 	}	
 }
 
+// OJO, aca esta resolucion funciona solo para 3 sabores.
+// si el dia de mañana tuviera 10 sabores tenes que "calibrar"
+// el contador de mordiscos para acceder al sabor.
+// pensa en como podes hacer una rotar la lista y no tanto en
+// como acceder a ella.
 object tuttifrutti {
 	var property libreGluten
 	var contadorMordiscos =0
